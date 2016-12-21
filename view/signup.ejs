@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="loginmodule">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular-route.js"></script>
+<script src="../static/library/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="../static/library/angular-bootstrap.js"></script>
+<script src="../static/serviceModule.js"></script>
+    <script src="../static/loginmodule.js"></script>
+<script src="../static/crudModule.js"></script>
+
+
+<script src="../static/app.js"></script>
+
+</head>
+<body ng-controller="login">
+
+<div class="container">
+   <br/>
+   <form style="border: 1px solid blue">
+   <br/>
+   <div class="row" style="margin-left:5px">
+     <div class="col-sm-4"><label>First Name:</label></div>
+     <div class="col-sm-8"><input type="text" ng-model="user.firstName"/></div>
+   </div>
+   <br/>
+   <div class="row" style="margin-left:5px">
+     <div class="col-sm-4"><label>Last Name:</label></div>
+     <div class="col-sm-8"><input type="text" na-model="user.lastName"/></div>
+   </div>
+   <br/>
+    <div class="row" style="margin-left:5px">
+      <div class="col-sm-4"><label>E Mail:</label></div>
+     <div class="col-sm-8"><input type="text" na-model="user.email"/></div>
+    </div>
+    <br/>
+    <div class="row" style="margin-left:5px">
+      <div class="col-sm-4"><label>User Name:</label></div>
+     <div class="col-sm-8"><input type="text" na-model="user.userName"/></div>
+    </div>
+    <br/>
+    <div class="row" style="margin-left:5px">
+      <div class="col-sm-4"><label>Password:</label></div>
+     <div class="col-sm-8"><input type="password" na-model="user.password"/></div>
+    </div>
+    <br/>
+    <button class="btn btn-primary" style="margin-left:5px;margin-bottom:5px;" ng-click="signup">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>

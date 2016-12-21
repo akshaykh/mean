@@ -1,0 +1,43 @@
+ <html>
+ <head>
+ </head>
+ <body ng-controller="insertController">
+ <form name="employeeInsert" id="empInsert" >
+        <br/>
+		<br/>
+		<div class="row">
+		<label class="col-sm-6">Employee Number:</label>
+		<input type="text" name="employeeNumber" more-than-hundread="100" ng-model="employee.employeeNumber" class="col-sm-4" required/>
+		<div class="col-sm-1">&nbsp;</div>
+		<button class="btn col-sm-1" style="padding-left:5px" ng-click="search()">Search</button>
+		</div>
+		<br/>
+		<p ng-show="employeeInsert.employeeNumber.$invalid && employeeInsert.employeeNumber.$dirty" class="alert alert-danger">Employee Number shouldn't be null</p>
+		<br/>
+	    <div class="row">
+		<label class="col-sm-6">First Name:</label>
+		<input type="Text" ng-model="employee.firstName" class="col-sm-6"/>
+		</div>
+		<br/>
+		<div class="row">
+		<label class="col-sm-6">Last Name:</label>
+		<input type="text" ng-model="employee.lastName" class="col-sm-6"/>
+		</div>
+		<br/>
+		
+		<div class="row">
+		<label class="col-sm-6">Date of Joining:</label>
+		<input type="text" ng-model="employee.dateOfJoining" class="col-sm-6"/>
+		</div>
+         <br/>
+		 
+		 <button class="btn btn-primary btn-lg" ng-click="saveData()">Save</button>
+		 <button class="btn btn-lg" ng-click="update()">Update</button>
+		 <button class="btn btn-lg" ng-click="deleteEmp()">Delete</button>
+   </form>
+   
+   <create-table info="empList" sayhi="message">
+   
+   </create-table>
+   </body>
+   </html>
